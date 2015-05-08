@@ -1,0 +1,17 @@
+{
+  "name": "thali-pouchdb-express-examples",
+  "version": "0.0.1",
+  "description": "Thali PouchDB Express Middleware Examples",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Microsoft Corporation",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.3",
+    "express-pouchdb": "^0.14.0",
+    "memdown": "^1.0.0",
+    "thali-acl": "^0.0.1"
+  }
+}

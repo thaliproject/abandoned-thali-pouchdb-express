@@ -1,0 +1,31 @@
+{
+  "name": "thali-pouchdb-express",
+  "version": "0.0.1",
+  "description": "Thali ACL PouchDB Express Middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thaliproject/thali-pouchdb-express.git"
+  },
+  "keywords": [
+    "Thali",
+    "ThaliProject",
+    "ACL",
+    "Express",
+    "PouchDB",
+    "Middleware"
+  ],
+  "author": "Microsoft Corporation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thaliproject/thali-pouchdb-express/issues"
+  },
+  "homepage": "https://github.com/thaliproject/thali-pouchdb-express",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4"
+  }
+}

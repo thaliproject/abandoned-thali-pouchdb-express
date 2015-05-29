@@ -27,5 +27,12 @@
   "devDependencies": {
     "chai": "^2.3.0",
     "mocha": "^2.2.4"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "pouchdb": "^3.5.0",
+    "should": "^6.0.3",
+    "supertest": "^1.0.1",
+    "thali-acl": "0.0.1"
   }
 }

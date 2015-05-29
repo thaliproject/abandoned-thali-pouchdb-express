@@ -1,7 +1,7 @@
 function noop() { }
 
 var PouchDB = require('pouchdb');
-var ThaliAclDb = require('thali-acl-db');
+var ThaliAclDb = require('thali-acl');
 var ThaliMiddleware = require('../.');
 
 var express = require('express');
@@ -20,7 +20,7 @@ acl.addRole('/db/foo')
 var component = new ThaliMiddleware(acl, 3);
 
 // Override the current user ID
-middleware._getUserId = function () {
+component._getUserId = function () {
   return 'joed';
 };
 

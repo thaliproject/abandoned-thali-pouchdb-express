@@ -28,7 +28,7 @@ ThaliMiddleware.prototype.middleware = function () {
       resource = url.split('/').slice(0,self._numPathComponents+1).join('/');
     }
 
-    self._acl.isAllowed(userId, resource).then(
+    self._acl.isAllowed(user, resource).then(
       function (result) {
         if (!result) {
           next(new HttpError(403, 'User has insufficient permissions'));
@@ -49,10 +49,19 @@ ThaliMiddleware.prototype.middleware = function () {
  * @param {Response} res The outgoing response
  * @returns {String} the user name.
  */
+
+/*
 ThaliMiddleware.prototype._getUserId(req, res) {
   return req.session && req.session.userId != null ?
     req.session.userId :
     null;
 };
+*/
+ThaliMiddleware.prototype._getUserId = function(req, res) {
+  return req.session && req.session.userId != null ?
+      req.session.userId :
+      null;
+};
+
 
 module.exports = ThaliMiddleware;
